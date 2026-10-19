@@ -1,0 +1,19 @@
+# Local secrets / environment configuration
+config.json
+
+# Runtime data
+logs/
+*.lock
+
+# Local tools and binaries (install separately)
+tools/
+
+# Temporary files
+*.tmp
+~$*
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
