@@ -1,0 +1,36 @@
+{
+  "Sql": {
+    "Server": "YOUR_SQL_SERVER",
+    "Database": "YOUR_DATABASE",
+    "User": "YOUR_READONLY_SQL_USER",
+    "Password": "YOUR_SQL_PASSWORD",
+    "Encrypt": false,
+    "TrustServerCertificate": true
+  },
+  "Share": {
+    "Root": "\\\\FILESERVER\\share\\incoming"
+  },
+  "Tools": {
+    "PdfToText": ".\\tools\\poppler\\bin\\pdftotext.exe"
+  },
+  "Options": {
+    "Recursive": true,
+    "Extensions": [
+      ".doc",
+      ".docx",
+      ".pdf"
+    ],
+    "ExcludedFolders": [
+      "Shortcuts"
+    ],
+    "ExcludedNameRegex": [
+      "^Template\\b"
+    ],
+    "SkipTemporaryOfficeFiles": true,
+    "LogFolder": "logs"
+  },
+  "Automation": {
+    "LockFile": "MKAB-Renamer.lock",
+    "LogRetentionDays": 90
+  }
+}
